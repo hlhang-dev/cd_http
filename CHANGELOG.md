@@ -1,3 +1,7 @@
-## 0.0.1
+## 0.1.0
 
-* TODO: Describe initial release.
+- Initial release.
+- Added HTTP request service.
+- Added token management.
+- Added upload and download support.
+- Added loading and message handlers.
