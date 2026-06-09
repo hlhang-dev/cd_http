@@ -1,7 +1,11 @@
 name: cd_http
-description: "cd_http"
-version: 0.0.1
-homepage:
+description: A lightweight Flutter HTTP wrapper based on dio with unified config, response parsing, token management, and file upload/download support.
+version: 0.1.0
+topics:
+  - http
+  - dio
+  - networking
+  - flutter
 
 environment:
   sdk: ^3.11.1
