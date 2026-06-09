@@ -87,6 +87,23 @@ class HttpService {
     );
   }
 
+  Future<T?> patch<T>(
+    String url, {
+    dynamic data,
+    Map<String, dynamic>? header,
+    bool showLoading = true,
+    T Function(dynamic json)? fromJsonT,
+  }) {
+    return doRequest<T>(
+      url,
+      method: HttpMethod.patch,
+      data: data,
+      header: header,
+      showLoading: showLoading,
+      fromJsonT: fromJsonT,
+    );
+  }
+
   Future<T?> delete<T>(
     String url, {
     dynamic data,
