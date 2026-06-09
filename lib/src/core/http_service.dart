@@ -178,7 +178,7 @@ class HttpService {
 
       if (!httpResponse.success) {
         if (httpResponse.msg.isNotEmpty) {
-          config.messageHandler?.show(httpResponse.msg);
+          config.messageHandler?.error(httpResponse.msg);
         }
 
         config.onBusinessError?.call(httpResponse.msg, httpResponse.code);
@@ -192,7 +192,7 @@ class HttpService {
       return httpResponse.result;
     } on DioException catch (e) {
       final message = _handleDioException(e);
-      config.messageHandler?.show(message);
+      config.messageHandler?.error(message);
       throw HttpException(message);
     } finally {
       if (needShowLoading) {

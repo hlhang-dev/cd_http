@@ -1,7 +1,6 @@
-## 0.1.0
+## 0.1.1
 
-- Initial release.
-- Added HTTP request service.
-- Added token management.
-- Added upload and download support.
-- Added loading and message handlers.
+- Add UploadFileService.
+- Add download file support.
+- Add unauthorized handler.
+- Optimize MessageHandler design.
