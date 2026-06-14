@@ -1,6 +1,6 @@
 name: cd_http
 description: A lightweight Flutter HTTP wrapper based on dio with unified config, response parsing, token management, and file upload/download support.
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/hlhang-dev/cd_http
 topics:
   - http

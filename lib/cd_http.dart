@@ -3,6 +3,7 @@ library cd_http;
 
 export 'src/core/http_init.dart';
 export 'src/core/http_service.dart';
+export 'src/definition/http_method.dart';
 export 'src/core/http_exception.dart';
 export 'src/core/upload_file_service.dart';
 export 'src/beans/http_config.dart';
