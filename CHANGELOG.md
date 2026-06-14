@@ -1,6 +1,3 @@
-## 0.1.1
+## 0.1.2
 
-- Add UploadFileService.
-- Add download file support.
-- Add unauthorized handler.
-- Optimize MessageHandler design.
+- Export HttpMethod.
