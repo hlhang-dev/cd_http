@@ -1,3 +1,3 @@
-## 0.1.2
+## 0.1.3
 
-- Export HttpMethod.
+- Token 持久化
