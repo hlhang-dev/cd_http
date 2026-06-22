@@ -20,7 +20,7 @@ class UploadFileService {
         Map<String, dynamic>? header,
         UploadProgressListener? progressListener,
       }) async {
-    final currentAuthToken = TokenManagement.getInstance().getToken();
+    final currentAuthToken = await TokenManagement.getInstance().getToken();
 
     uploadFileItem.id = StringUtils.getRandomStr();
 
@@ -38,7 +38,7 @@ class UploadFileService {
         url,
         data: formData,
         options: Options(
-          headers: HttpUtils.buildHeader(
+          headers: await HttpUtils.buildHeader(
             {},
             {
               if (token.isNotEmpty) 'authorization': token,
@@ -111,7 +111,7 @@ class UploadFileService {
         savePath,
         queryParameters: data,
         options: Options(
-          headers: HttpUtils.buildHeader(
+          headers: await HttpUtils.buildHeader(
             {},
             header,
           ),

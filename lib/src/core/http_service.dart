@@ -151,7 +151,7 @@ class HttpService {
         queryParameters: isGet && data is Map<String, dynamic> ? data : null,
         options: Options(
           method: method.value,
-          headers: HttpUtils.buildHeader(config.header, header),
+          headers: await HttpUtils.buildHeader(config.header, header),
         ),
       );
 
